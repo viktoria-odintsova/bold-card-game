@@ -44,7 +44,18 @@ namespace BoldGame
 
         public void Shuffle()
         {
-
+            Random rand = new Random();
+            Card x;
+            for (int shuffletimes = 0; shuffletimes < 100; shuffletimes++)
+            {
+                for (int i = 0; i < NumOfCards; i++)
+                {
+                    int secondCardIndex = rand.Next(80);
+                    x = this.Deck[i];
+                    this.Deck[i] = this.Deck[secondCardIndex];
+                    this.Deck[secondCardIndex] = x;
+                }
+            }
         }
     }
 }
