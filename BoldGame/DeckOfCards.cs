@@ -28,7 +28,8 @@ namespace BoldGame
                     {
                         foreach(Pattern pattern in Enum.GetValues(typeof(Pattern)))
                         {
-                            Deck[i] = new Card(shape, size, color, pattern, "imagepath");
+                            string path = shape.ToString().Substring(0, 1) + size.ToString().Substring(0, 1) + color.ToString().Substring(0, 1);
+                            Deck[i] = new Card(shape, size, color, pattern, path);
 
                             Console.WriteLine(Deck[i].ToString());
                             i++;

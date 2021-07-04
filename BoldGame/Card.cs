@@ -52,7 +52,7 @@ namespace BoldGame
         }
         public override string ToString()
         {
-            return MyShape + " " + MySize + " " + MyColor + " " + MyPattern;
+            return MyShape + " " + MySize + " " + MyColor + " " + MyPattern + " " + ImagePath;
         }
 
     }
