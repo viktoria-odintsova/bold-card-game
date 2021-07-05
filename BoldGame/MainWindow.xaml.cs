@@ -26,26 +26,12 @@ namespace BoldGame
         public MainWindow()
         {
             InitializeComponent();
-            DeckOfCards D = new DeckOfCards();
-            D.CreateDeck();
+            CompositionTarget.Rendering += OnRendering;
+        }
 
-            int i = 0;
-            int j = 0;
-            while (j < 4)
-            {
-
-                while (i < 5)
-                {
-                    x += 100;
-                    i++;
-                    CreateViewImageDynamically( x ,  y) ;
-                }
-                i = 0;
-                x = 0;
-                y += 130;
-                j++;
-            }
-            
+        private void OnRendering(object sender, EventArgs e)
+        {
+            DebugTextBlock.Text = Mouse.GetPosition(DebugTextBlock).ToString();
         }
         private void CreateViewImageDynamically(int x, int y)
         {
@@ -58,7 +44,7 @@ namespace BoldGame
             //// Create a BitmapSource  
             BitmapImage bitmap = new BitmapImage();
             bitmap.BeginInit();
-            bitmap.UriSource = new Uri(@"pack://siteoforigin:,,,/Resources/Back.jpg");
+            bitmap.UriSource = new Uri(@"pack://siteoforigin:,,,/Resources/back.jpg");
             bitmap.EndInit();
 
             
@@ -76,8 +62,27 @@ namespace BoldGame
             grdMainWindow.Children.Add(dynamicImage);
         }
 
-        
+        private void btnStart(object sender, RoutedEventArgs e)
+        {
+            DeckOfCards D = new DeckOfCards();
+            D.CreateDeck();
 
+            int i = 0;
+            int j = 0;
+            while (j < 4)
+            {
 
+                while (i < 5)
+                {
+                    x += 100;
+                    i++;
+                    CreateViewImageDynamically(x, y);
+                }
+                i = 0;
+                x = 0;
+                y += 130;
+                j++;
+            }
+        }
     }
 }

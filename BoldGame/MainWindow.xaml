@@ -5,6 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BoldGame"
         mc:Ignorable="d"
-        Title="MainWindow" Height="389.944" Width="679.991">
-    <Grid x:Name="grdMainWindow"/>
+        Title="MainWindow" Height="562.744" Width="679.991">
+    <Grid x:Name="grdMainWindow">
+        <Button Content="Start" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="75" Click="btnStart" RenderTransformOrigin="0.36,-0.025"/>
+        <TextBlock x:Name="DebugTextBlock" HorizontalAlignment="Left" Margin="10,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="110"/>
+    </Grid>
 </Window>
