@@ -118,8 +118,251 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Back.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clbs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clbt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clbt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clbz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clbz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clps.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clpt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clpt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clpz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clpz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clyt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clyt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clyz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clyz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cmbs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmbt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cmbt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmbz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cmbz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cmps.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmpt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cmpt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmpz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cmpz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cmys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmyt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cmyt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmyz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cmyz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csbs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csbt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csbt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csbz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csbz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csps.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cspt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cspt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cspz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cspz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csyt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csyt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csyz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csyz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlbs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlbt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlbt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlbz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlbz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlps.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlpt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlpt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlpz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlpz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlyt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlyt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hlyz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hlyz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hmbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hmbs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hmbt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hmbt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hmbz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hmbz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hmps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hmps.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hmpt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hmpt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hmpz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hmpz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hmys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hmys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hmyt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hmyt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hmyz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hmyz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hsbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hsbs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hsbt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hsbt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hsbz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hsbz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hsps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hsps.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hspt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hspt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hspz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hspz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hsys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hsys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hsyt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hsyt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hsyz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hsyz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slbs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slbt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slbt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slbz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slbz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slps.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slpt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slpt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slpz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slpz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slyt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slyt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slyz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slyz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smbs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smbt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smbt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smbz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smbz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smps.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smpt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smpt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smpz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smpz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smyt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smyt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="smyz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\smyz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ssbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ssbs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ssbt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ssbt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ssbz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ssbz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ssps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ssps.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sspt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sspt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sspz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sspz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ssys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ssys.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ssyt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ssyt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ssyz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ssyz.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 
 </root>
