@@ -98,9 +98,250 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Back.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clbs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clbt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clbz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clps.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clpt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clpz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clyt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clyz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmbs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmbt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmbz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmps.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmpt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmpz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmyt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cmyz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csbs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csbt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csbz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csps.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cspt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cspz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csyt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csyz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hlbs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hlbt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hlbz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hlps.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hlpt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hlpz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hlys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hlyt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hlyz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hmbs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hmbt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hmbz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hmps.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hmpt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hmpz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hmys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hmyt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hmyz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hsbs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hsbt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hsbz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hsps.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hspt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hspz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hsys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hsyt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hsyz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slbs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slbt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slbz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slps.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slpt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slpz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slyt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slyz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smbs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smbt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smbz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smps.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smpt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smpz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smyt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smyz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssbs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssbt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssbz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssps.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sspt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sspz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssyt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ssyz.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
