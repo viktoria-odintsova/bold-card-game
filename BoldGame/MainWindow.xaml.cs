@@ -37,10 +37,10 @@ namespace BoldGame
             DebugTextBlock.Text = Mouse.GetPosition(DebugTextBlock).ToString();
             coordinations = DebugTextBlock.Text;
             string[] xny = coordinations.Split(',');
-            foreach(var cord in xny)
-            {
-                Console.WriteLine($"<{cord}>");
-            }
+            //foreach(var cord in xny)
+           // {
+             //   Console.WriteLine($"<{cord}>");
+           // }
         }
         private void CreateViewImageDynamically(int x, int y)
         {
