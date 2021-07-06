@@ -71,13 +71,17 @@ namespace BoldGame
             bitmap.BeginInit();
             bitmap.UriSource = new Uri(@"pack://siteoforigin:,,,/Resources/" + card.ImagePath);
             bitmap.EndInit();
-            image.Source = bitmap; 
+            image.Source = bitmap;
+
+            game.OpenedCards.Add(card);
+            bool isMatch = game.CompareCards();
+            Console.WriteLine(isMatch);
         }
 
      
         private void BtnStart_Click(object sender, RoutedEventArgs e)
         {
-            y = 0;
+            y = 30;
             DeleteImages();
             game = new Game();
             Console.WriteLine(game.Deck);

@@ -82,5 +82,29 @@ namespace BoldGame
                 }
             }
         }
+
+        public bool CompareCards()
+        {
+            bool isMatch = false;
+
+            Card initialCard = OpenedCards.First();
+            foreach(Card checkCard in OpenedCards)
+            {
+                
+                if(checkCard.MyColor == initialCard.MyColor || checkCard.MyShape == initialCard.MyShape || checkCard.MySize == initialCard.MySize || checkCard.MyPattern == initialCard.MyPattern)
+                {
+                    isMatch = true;
+                    initialCard = checkCard;
+                    Console.WriteLine("You got it!");
+                }
+                else
+                {
+                    isMatch = false;
+                    Console.WriteLine("You Suck!");
+                }
+               
+            }
+            return isMatch;
+        }
     }
 }
