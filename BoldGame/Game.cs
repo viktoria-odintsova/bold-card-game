@@ -53,7 +53,7 @@ namespace BoldGame
                     {
                         foreach (Card.Pattern pattern in Enum.GetValues(typeof(Card.Pattern)))
                         {
-                            string path = shape.ToString().Substring(0, 1) + size.ToString().Substring(0, 1) + color.ToString().Substring(0, 1) + pattern.ToString().Substring(0, 1) + ".jpg"; 
+                            string path = shape.ToString().Substring(0, 1) + size.ToString().Substring(0, 1) + color.ToString().Substring(0, 1) + pattern.ToString().Substring(0, 1) + ".jpg";
                             Deck[i] = new Card(shape, size, color, pattern, path.ToLower());
 
                             Console.WriteLine(Deck[i].ToString());
@@ -85,26 +85,45 @@ namespace BoldGame
 
         public bool CompareCards()
         {
-            bool isMatch = false;
+            bool isColorMatch = true;
+            bool isShapeMatch = true;
+            bool isSizeMatch = true;
+            bool isPatternMatch = true;
 
             Card initialCard = OpenedCards.First();
-            foreach(Card checkCard in OpenedCards)
+            Card.Color initialColor = initialCard.MyColor;
+            Card.Shape initialShape = initialCard.MyShape;
+            Card.Size initialSize = initialCard.MySize;
+            Card.Pattern initialPattern = initialCard.MyPattern;
+            foreach(Card checkCard in OpenedCards.Skip(1))
             {
-                
-                if(checkCard.MyColor == initialCard.MyColor || checkCard.MyShape == initialCard.MyShape || checkCard.MySize == initialCard.MySize || checkCard.MyPattern == initialCard.MyPattern)
+                if (initialColor != checkCard.MyColor)
                 {
-                    isMatch = true;
-                    initialCard = checkCard;
-                    Console.WriteLine("You got it!");
+                    isColorMatch = false;
                 }
-                else
-                {
-                    isMatch = false;
-                    Console.WriteLine("You Suck!");
-                }
-               
             }
-            return isMatch;
+            foreach(Card checkCard in OpenedCards.Skip(1))
+            {
+                if (initialPattern != checkCard.MyPattern)
+                {
+                    isPatternMatch = false;
+                }
+            }
+            foreach(Card checkCard in OpenedCards.Skip(1))
+            {
+                if (initialSize != checkCard.MySize)
+                {
+                    isSizeMatch = false;
+                }
+            }
+            foreach(Card checkCard in OpenedCards.Skip(1))
+            {
+                if (initialShape != checkCard.MyShape)
+                {
+                    isShapeMatch = false;
+                }
+            }
+            return isColorMatch || isShapeMatch || isSizeMatch || isPatternMatch;
         }
     }
 }

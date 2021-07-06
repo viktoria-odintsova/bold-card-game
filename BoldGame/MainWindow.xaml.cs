@@ -74,8 +74,11 @@ namespace BoldGame
             image.Source = bitmap;
 
             game.OpenedCards.Add(card);
-            bool isMatch = game.CompareCards();
-            Console.WriteLine(isMatch);
+            if (game.OpenedCards.Count > 1)
+            {
+                bool isMatch = game.CompareCards();
+                Console.WriteLine(isMatch);
+            }
         }
 
      
