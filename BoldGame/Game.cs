@@ -35,7 +35,6 @@ namespace BoldGame
             {
                 for (int j = 0; j < 5; j++)
                 {
-                    Console.WriteLine(i + ":" + j);
                     Board[i, j] = Deck[0];
                     Console.WriteLine(i + ":" + j + " - " + Deck[0].ToString());
                     Deck = Deck.Skip(1).ToArray();
@@ -54,8 +53,8 @@ namespace BoldGame
                     {
                         foreach (Card.Pattern pattern in Enum.GetValues(typeof(Card.Pattern)))
                         {
-                            string path = shape.ToString().Substring(0, 1) + size.ToString().Substring(0, 1) + color.ToString().Substring(0, 1);
-                            Deck[i] = new Card(shape, size, color, pattern, path);
+                            string path = shape.ToString().Substring(0, 1) + size.ToString().Substring(0, 1) + color.ToString().Substring(0, 1) + pattern.ToString().Substring(0, 1) + ".jpg"; 
+                            Deck[i] = new Card(shape, size, color, pattern, path.ToLower());
 
                             Console.WriteLine(Deck[i].ToString());
                             i++;

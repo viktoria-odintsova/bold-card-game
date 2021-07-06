@@ -22,27 +22,13 @@ namespace BoldGame
     {
         int x = 0;
         int y = 0;
-        int cordx = 0;
-        int cordy = 0;
         Game game;
 
         public MainWindow()
         {
             InitializeComponent();
-            CompositionTarget.Rendering += OnRendering;
         }
 
-        private void OnRendering(object sender, EventArgs e)
-        {
-            string coordinations;
-            DebugTextBlock.Text = Mouse.GetPosition(DebugTextBlock).ToString();
-            coordinations = DebugTextBlock.Text;
-            string[] xny = coordinations.Split(',');
-            //foreach(var cord in xny)
-           // {
-             //   Console.WriteLine($"<{cord}>");
-           // }
-        }
         private void CreateViewImageDynamically(int x, int y, Card tagCard)
         {
            
@@ -77,13 +63,21 @@ namespace BoldGame
         private void DynamicImage_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             Image image = sender as Image;
+            
             Card card = image.Tag as Card;
             Console.WriteLine(card);
+
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = new Uri(@"pack://siteoforigin:,,,/Resources/" + card.ImagePath);
+            bitmap.EndInit();
+            image.Source = bitmap; 
         }
 
      
         private void BtnStart_Click(object sender, RoutedEventArgs e)
         {
+            y = 0;
             game = new Game();
             Console.WriteLine(game.Deck);
             int i = 0;

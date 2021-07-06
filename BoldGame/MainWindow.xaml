@@ -8,6 +8,5 @@
         Title="MainWindow" Height="562.744" Width="679.991">
     <Grid x:Name="grdMainWindow">
         <Button x:Name="BtnStart" Content="Start" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="75" Click="BtnStart_Click" RenderTransformOrigin="0.36,-0.025"/>
-        <TextBlock x:Name="DebugTextBlock" HorizontalAlignment="Left" Margin="10,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="110"/>
     </Grid>
 </Window>
