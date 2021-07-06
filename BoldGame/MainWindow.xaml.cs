@@ -51,13 +51,13 @@ namespace BoldGame
             dynamicImage.Margin = new Thickness(x, y, 0, 0);
             dynamicImage.Tag = tagCard;
             dynamicImage.MouseLeftButtonUp += DynamicImage_MouseLeftButtonUp;
-                    
-            
+
+
 
             //dynamicImage.MouseLeftButtonUp += this.DynamicImage_MouseLeftButtonUp;
             //this.X += 70;
             ////Add Image to Window  
-            grdMainWindow.Children.Add(dynamicImage);
+            grdBoard.Children.Add(dynamicImage);
         }
 
         private void DynamicImage_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
@@ -97,21 +97,10 @@ namespace BoldGame
                 j++;
             }
         }
+
         private void DeleteImages()
         {
-            int currentIndex = 0;
-
-            while (currentIndex < grdMainWindow.Children.Count)
-            {
-                UIElement element = grdMainWindow.Children[currentIndex];
-
-                if (element.GetType().Equals(typeof(Image)))
-                {
-                        grdMainWindow.Children.Remove(element);
-
-                }
-                currentIndex++;
-            }
+            grdBoard.Children.Clear();
         }
     }
 }
