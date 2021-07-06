@@ -22,6 +22,8 @@ namespace BoldGame
     {
         int x = 0;
         int y = 0;
+        int cordx = 0;
+        int cordy = 0;
         Game game;
 
         public MainWindow()
@@ -32,7 +34,14 @@ namespace BoldGame
 
         private void OnRendering(object sender, EventArgs e)
         {
+            string coordinations;
             DebugTextBlock.Text = Mouse.GetPosition(DebugTextBlock).ToString();
+            coordinations = DebugTextBlock.Text;
+            string[] xny = coordinations.Split(',');
+            //foreach(var cord in xny)
+           // {
+             //   Console.WriteLine($"<{cord}>");
+           // }
         }
         private void CreateViewImageDynamically(int x, int y, Card tagCard)
         {
