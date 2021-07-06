@@ -22,27 +22,13 @@ namespace BoldGame
     {
         int x = 0;
         int y = 0;
-        int cordx = 0;
-        int cordy = 0;
         Game game;
 
         public MainWindow()
         {
             InitializeComponent();
-            CompositionTarget.Rendering += OnRendering;
         }
-
-        private void OnRendering(object sender, EventArgs e)
-        {
-            string coordinations;
-            DebugTextBlock.Text = Mouse.GetPosition(DebugTextBlock).ToString();
-            coordinations = DebugTextBlock.Text;
-            string[] xny = coordinations.Split(',');
-            //foreach(var cord in xny)
-           // {
-             //   Console.WriteLine($"<{cord}>");
-           // }
-        }
+        
         private void CreateViewImageDynamically(int x, int y, Card tagCard)
         {
            
@@ -79,11 +65,16 @@ namespace BoldGame
             Image image = sender as Image;
             Card card = image.Tag as Card;
             Console.WriteLine(card);
+
+
+
+
         }
 
      
         private void BtnStart_Click(object sender, RoutedEventArgs e)
         {
+            DeleteImages();
             game = new Game();
             Console.WriteLine(game.Deck);
             int i = 0;
@@ -100,6 +91,22 @@ namespace BoldGame
                 x = 0;
                 y += 130;
                 j++;
+            }
+        }
+        private void DeleteImages()
+        {
+            int currentIndex = 0;
+
+            while (currentIndex < grdMainWindow.Children.Count)
+            {
+                UIElement element = grdMainWindow.Children[currentIndex];
+
+                if (element.GetType().Equals(typeof(Image)))
+                {
+                        grdMainWindow.Children.Remove(element);
+
+                }
+                currentIndex++;
             }
         }
     }
