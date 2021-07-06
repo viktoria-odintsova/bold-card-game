@@ -22,6 +22,7 @@ namespace BoldGame
     {
         int x = 0;
         int y = 0;
+        Game game;
 
         public MainWindow()
         {
@@ -33,7 +34,7 @@ namespace BoldGame
         {
             DebugTextBlock.Text = Mouse.GetPosition(DebugTextBlock).ToString();
         }
-        private void CreateViewImageDynamically(int x, int y)
+        private void CreateViewImageDynamically(int x, int y, Card tagCard)
         {
            
             //// Create Image and set its width and height  
@@ -53,6 +54,8 @@ namespace BoldGame
             dynamicImage.HorizontalAlignment = HorizontalAlignment.Left;
             dynamicImage.VerticalAlignment = VerticalAlignment.Top;
             dynamicImage.Margin = new Thickness(x, y, 0, 0);
+            dynamicImage.Tag = tagCard;
+            dynamicImage.MouseLeftButtonUp += DynamicImage_MouseLeftButtonUp;
                     
             
 
@@ -62,21 +65,27 @@ namespace BoldGame
             grdMainWindow.Children.Add(dynamicImage);
         }
 
-        private void btnStart(object sender, RoutedEventArgs e)
+        private void DynamicImage_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            DeckOfCards D = new DeckOfCards();
-            D.CreateDeck();
+            Image image = sender as Image;
+            Card card = image.Tag as Card;
+            Console.WriteLine(card);
+        }
 
+     
+        private void BtnStart_Click(object sender, RoutedEventArgs e)
+        {
+            game = new Game();
+            Console.WriteLine(game.Deck);
             int i = 0;
             int j = 0;
             while (j < 4)
             {
-
                 while (i < 5)
                 {
                     x += 100;
+                    CreateViewImageDynamically(x, y, game.Board[j, i]);
                     i++;
-                    CreateViewImageDynamically(x, y);
                 }
                 i = 0;
                 x = 0;

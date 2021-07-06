@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoldGame
 {
-    public class DeckOfCards : Card
+    public class DeckOfCards 
     {
         public const int NumOfCards = 81;
 
@@ -20,13 +20,13 @@ namespace BoldGame
         public void CreateDeck()
         {
             int i = 0;
-            foreach(Shape shape in Enum.GetValues(typeof(Shape)))
+            foreach(Card.Shape shape in Enum.GetValues(typeof(Card.Shape)))
             {
-                foreach(Size size in Enum.GetValues(typeof(Size)))
+                foreach(Card.Size size in Enum.GetValues(typeof(Card.Size)))
                 {
-                    foreach(Color color in Enum.GetValues(typeof(Color)))
+                    foreach(Card.Color color in Enum.GetValues(typeof(Card.Color)))
                     {
-                        foreach(Pattern pattern in Enum.GetValues(typeof(Pattern)))
+                        foreach(Card.Pattern pattern in Enum.GetValues(typeof(Card.Pattern)))
                         {
                             string path = shape.ToString().Substring(0, 1) + size.ToString().Substring(0, 1) + color.ToString().Substring(0, 1);
                             Deck[i] = new Card(shape, size, color, pattern, path);
