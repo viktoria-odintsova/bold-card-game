@@ -28,7 +28,7 @@ namespace BoldGame
         {
             InitializeComponent();
         }
-        
+
         private void CreateViewImageDynamically(int x, int y, Card tagCard)
         {
            
@@ -63,17 +63,21 @@ namespace BoldGame
         private void DynamicImage_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             Image image = sender as Image;
+            
             Card card = image.Tag as Card;
             Console.WriteLine(card);
 
-
-
-
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = new Uri(@"pack://siteoforigin:,,,/Resources/" + card.ImagePath);
+            bitmap.EndInit();
+            image.Source = bitmap; 
         }
 
      
         private void BtnStart_Click(object sender, RoutedEventArgs e)
         {
+            y = 0;
             DeleteImages();
             game = new Game();
             Console.WriteLine(game.Deck);
