@@ -29,6 +29,14 @@ namespace BoldGame
             InitializeComponent();
         }
 
+        private void BtnStart_Click(object sender, RoutedEventArgs e)
+        {
+            DeleteImages();
+            game = new Game();
+            Console.WriteLine(game.Deck);
+            DisplayBacks();
+        }
+
         private void CreateViewImageDynamically(int x, int y, Card tagCard)
         {
            
@@ -60,6 +68,26 @@ namespace BoldGame
             grdBoard.Children.Add(dynamicImage);
         }
 
+        private void DisplayBacks()
+        {
+            y = 30;
+            int i = 0;
+            int j = 0;
+            while (j < 4)
+            {
+                while (i < 5)
+                {
+                    x += 100;
+                    CreateViewImageDynamically(x, y, game.Board[j, i]);
+                    i++;
+                }
+                i = 0;
+                x = 0;
+                y += 130;
+                j++;
+            }
+        }
+
         private void DynamicImage_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             Image image = sender as Image;
@@ -78,30 +106,6 @@ namespace BoldGame
             {
                 bool isMatch = game.CompareCards();
                 Console.WriteLine(isMatch);
-            }
-        }
-
-     
-        private void BtnStart_Click(object sender, RoutedEventArgs e)
-        {
-            y = 30;
-            DeleteImages();
-            game = new Game();
-            Console.WriteLine(game.Deck);
-            int i = 0;
-            int j = 0;
-            while (j < 4)
-            {
-                while (i < 5)
-                {
-                    x += 100;
-                    CreateViewImageDynamically(x, y, game.Board[j, i]);
-                    i++;
-                }
-                i = 0;
-                x = 0;
-                y += 130;
-                j++;
             }
         }
 

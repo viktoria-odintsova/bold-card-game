@@ -91,34 +91,30 @@ namespace BoldGame
             bool isPatternMatch = true;
 
             Card initialCard = OpenedCards.First();
-            Card.Color initialColor = initialCard.MyColor;
-            Card.Shape initialShape = initialCard.MyShape;
-            Card.Size initialSize = initialCard.MySize;
-            Card.Pattern initialPattern = initialCard.MyPattern;
             foreach(Card checkCard in OpenedCards.Skip(1))
             {
-                if (initialColor != checkCard.MyColor)
+                if (initialCard.MyColor != checkCard.MyColor)
                 {
                     isColorMatch = false;
                 }
             }
             foreach(Card checkCard in OpenedCards.Skip(1))
             {
-                if (initialPattern != checkCard.MyPattern)
+                if (initialCard.MyPattern != checkCard.MyPattern)
                 {
                     isPatternMatch = false;
                 }
             }
             foreach(Card checkCard in OpenedCards.Skip(1))
             {
-                if (initialSize != checkCard.MySize)
+                if (initialCard.MySize != checkCard.MySize)
                 {
                     isSizeMatch = false;
                 }
             }
             foreach(Card checkCard in OpenedCards.Skip(1))
             {
-                if (initialShape != checkCard.MyShape)
+                if (initialCard.MyShape != checkCard.MyShape)
                 {
                     isShapeMatch = false;
                 }
