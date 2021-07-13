@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,6 +23,7 @@ namespace BoldGame
     {
         int x = 0;
         int y = 0;
+        bool isTurnActive;
         Game game;
 
         public MainWindow()
@@ -34,7 +36,29 @@ namespace BoldGame
             DeleteImages();
             game = new Game();
             Console.WriteLine(game.Deck);
+            new InputNames(game).ShowDialog();
+            Console.WriteLine(game.Player1.Name + ", " + game.Player2.Name);
             DisplayBacks();
+            DisplayTurn();
+            lblPlayer1Name.Content = game.Player1.Name;
+            lblPlayer2Name.Content = game.Player2.Name;
+            lblPlayer1Points.Content = game.Player1.Score.ToString();
+            lblPlayer2Points.Content = game.Player2.Score.ToString();
+            
+            isTurnActive = true;
+            BtnGetPoints.IsEnabled = false;
+        }
+
+        private void DisplayTurn()
+        {
+            if(game.PlayerTurn == 1)
+            {
+                lblPlayerTurn.Content = game.Player1.Name + "'s Turn";
+            }
+            else
+            {
+                lblPlayerTurn.Content = game.Player2.Name + "'s Turn";
+            }
         }
 
         private void CreateViewImageDynamically(int x, int y, Card tagCard)
@@ -71,41 +95,56 @@ namespace BoldGame
         private void DisplayBacks()
         {
             y = 30;
-            int i = 0;
-            int j = 0;
-            while (j < 4)
-            {
-                while (i < 5)
+            for(int i = 0; i < 4; i++)
+            { 
+                for(int j = 0; j < 5; j++)
                 {
                     x += 100;
-                    CreateViewImageDynamically(x, y, game.Board[j, i]);
-                    i++;
+                    CreateViewImageDynamically(x, y, game.Board[i, j]);
                 }
-                i = 0;
                 x = 0;
                 y += 130;
-                j++;
             }
         }
 
-        private void DynamicImage_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private async void DynamicImage_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            Image image = sender as Image;
-            
-            Card card = image.Tag as Card;
-            Console.WriteLine(card);
-
-            BitmapImage bitmap = new BitmapImage();
-            bitmap.BeginInit();
-            bitmap.UriSource = new Uri(@"pack://siteoforigin:,,,/Resources/" + card.ImagePath);
-            bitmap.EndInit();
-            image.Source = bitmap;
-
-            game.OpenedCards.Add(card);
-            if (game.OpenedCards.Count > 1)
+            if (isTurnActive)
             {
-                bool isMatch = game.CompareCards();
-                Console.WriteLine(isMatch);
+                Image image = sender as Image;
+
+                Card card = image.Tag as Card;
+                Console.WriteLine(card);
+
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri(@"pack://siteoforigin:,,,/Resources/" + card.ImagePath);
+                bitmap.EndInit();
+                image.Source = bitmap;
+
+                game.OpenedCards.Add(card);
+                if (game.OpenedCards.Count > 1)
+                {
+                    bool isMatch = game.CompareCards();
+                    Console.WriteLine(isMatch);
+                    if (!isMatch)
+                    {
+
+                        BtnGetPoints.IsEnabled = false;
+                        game.PlayerTurn = game.PlayerTurn % 2 + 1;
+                        DisplayTurn();
+                        game.OpenedCards.Clear();
+                        isTurnActive = false;
+                        await Task.Delay(2000);
+                        isTurnActive = true;
+                        DeleteImages();
+                        DisplayBacks();
+                    }
+                    else
+                    {
+                        BtnGetPoints.IsEnabled = true;
+                    }
+                }
             }
         }
 
@@ -113,5 +152,30 @@ namespace BoldGame
         {
             grdBoard.Children.Clear();
         }
+
+        private void BtnGetPoints_Click(object sender, RoutedEventArgs e)
+        {
+            game.GivePoints();
+            lblPlayer1Points.Content = game.Player1.Score.ToString();
+            lblPlayer2Points.Content = game.Player2.Score.ToString();
+            if (!game.UpdateBoard())
+            {
+                isTurnActive = false;
+                BtnGetPoints.IsEnabled = false;
+                Player winner = game.EndGame();
+                MessageBox.Show("The game is over. The winner is " + winner.Name + "with the score: " + winner.Score.ToString());
+                DeleteImages();
+
+            }
+            else
+            {
+                game.PlayerTurn = game.PlayerTurn % 2 + 1;
+                DisplayTurn();
+                DeleteImages();
+                DisplayBacks();
+            }
+        }
+
+        
     }
 }

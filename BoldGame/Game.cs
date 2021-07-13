@@ -29,19 +29,6 @@ namespace BoldGame
             CreateBoard();
         }
 
-        private void CreateBoard()
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                for (int j = 0; j < 5; j++)
-                {
-                    Board[i, j] = Deck[0];
-                    Console.WriteLine(i + ":" + j + " - " + Deck[0].ToString());
-                    Deck = Deck.Skip(1).ToArray();
-                }
-            }
-        }
-
         private void CreateDeck()
         {
             int i = 0;
@@ -65,6 +52,19 @@ namespace BoldGame
             }
             Shuffle();
 
+        }
+
+        private void CreateBoard()
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    Board[i, j] = Deck[0];
+                    Console.WriteLine(i + ":" + j + " - " + Deck[0].ToString());
+                    Deck = Deck.Skip(1).ToArray();
+                }
+            }
         }
 
         private void Shuffle()
@@ -91,28 +91,28 @@ namespace BoldGame
             bool isPatternMatch = true;
 
             Card initialCard = OpenedCards.First();
-            foreach(Card checkCard in OpenedCards.Skip(1))
+            foreach (Card checkCard in OpenedCards.Skip(1))
             {
                 if (initialCard.MyColor != checkCard.MyColor)
                 {
                     isColorMatch = false;
                 }
             }
-            foreach(Card checkCard in OpenedCards.Skip(1))
+            foreach (Card checkCard in OpenedCards.Skip(1))
             {
                 if (initialCard.MyPattern != checkCard.MyPattern)
                 {
                     isPatternMatch = false;
                 }
             }
-            foreach(Card checkCard in OpenedCards.Skip(1))
+            foreach (Card checkCard in OpenedCards.Skip(1))
             {
                 if (initialCard.MySize != checkCard.MySize)
                 {
                     isSizeMatch = false;
                 }
             }
-            foreach(Card checkCard in OpenedCards.Skip(1))
+            foreach (Card checkCard in OpenedCards.Skip(1))
             {
                 if (initialCard.MyShape != checkCard.MyShape)
                 {
@@ -120,6 +120,52 @@ namespace BoldGame
                 }
             }
             return isColorMatch || isShapeMatch || isSizeMatch || isPatternMatch;
+        }
+
+        public bool UpdateBoard()
+        {
+            if (Deck.Length >= OpenedCards.Count)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    for (int j = 0; j < 5; j++)
+                    {
+                        if (OpenedCards.Contains(Board[i, j]))
+                        {
+                            Board[i, j] = Deck[0];
+                            Deck = Deck.Skip(1).ToArray();
+                        }
+                    }
+                }
+                OpenedCards.Clear();
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public void GivePoints()
+        {
+            int score = (int)Math.Pow(OpenedCards.Count, 2);
+            if (PlayerTurn == 1)
+            {
+                Player1.Score += score;
+            }
+            else
+            {
+                Player2.Score += score;
+            }
+        }
+
+        public Player EndGame()
+        {
+            if(Player1.Score > Player2.Score)
+            {
+                return Player1;
+            }
+            return Player2;
         }
     }
 }
